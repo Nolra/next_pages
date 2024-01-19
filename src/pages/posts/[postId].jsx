@@ -26,8 +26,8 @@ const getStaticProps = async({params}) => {
   const post = await getPostData(params.postId);
   return { 
     props: { post },
-    revalidate: 10, // частота пересборки страницы
-    notFound: !post, // 404 проверка на то что данные есть
+    // revalidate: 10, // частота пересборки страницы
+    // notFound: !post, // 404 проверка на то что данные есть
     // redirect: { // можно использовать notFound или редиректить
     //   destination: "/",
     //   permanent: false
@@ -48,7 +48,7 @@ const getStaticPaths = async() => {
   )
   return { 
     paths, // определяет пути для статичных страниц, которые мы будем генерировать во время build
-    fallback: "blocking" // false | 'blocking' 
+    fallback: false // false | 'blocking' 
   }
 }
 // если нет статичной пререндеренной страницы и
