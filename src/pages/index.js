@@ -76,5 +76,5 @@ export default HomePage;
 // и копируем содержимое этого файла туда https://github.com/DaveAldon/Next.js-and-GitHub-Pages-Example/blob/main/.github/workflows/node.js.yml
 
 // 6. Нужно обновить личный токен на github (user --> settings --> developer settings ---> tokens ---> checkbox workflow)
-// THIS!!! 7. Изменить настройки репозитория здесь внизу https://github.com/Nolra/next_pages/settings/actions
+// THIS 7. Изменить настройки репозитория здесь внизу https://github.com/Nolra/next_pages/settings/actions
 // Workflow Permissions: Rean and Write и Allow GitHub Actions to approve pull requests
