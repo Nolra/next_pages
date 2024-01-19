@@ -61,6 +61,7 @@ export default HomePage;
 // const isProd = process.env.NODE_ENV === 'production';
 // const nextConfig = {
 //   output: 'export', // ДОБАВЛЕНО
+//   basePath: '/next_pages', // ДОБАВЛЕНО
 //   images: {
 //     loader: 'akamai',
 //     path: '',
