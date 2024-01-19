@@ -53,13 +53,14 @@ export default HomePage;
 // DEPLOY на git pages
 // ЛОКАЛЬНО
 // 1. Создаем create-next-app my-next-app
-// 2. Заходим в package.json и добавляем в scripts строчку "export": "next export"
+// 2. Заходим в package.json и добавляем в scripts строчку "export": "next build"
 // 3. Там же в package.json добавляем "homepage": "ссылка на наш репо gitpages"
 // 4. Меняем next.config.js на next.config.mjs и редактируем его на 
 
 // /** @type {import('next').NextConfig} */
 // const isProd = process.env.NODE_ENV === 'production';
 // const nextConfig = {
+//   output: 'export', // ДОБАВЛЕНО
 //   images: {
 //     loader: 'akamai',
 //     path: '',
@@ -74,4 +75,5 @@ export default HomePage;
 // и копируем содержимое этого файла туда https://github.com/DaveAldon/Next.js-and-GitHub-Pages-Example/blob/main/.github/workflows/node.js.yml
 
 // 6. Нужно обновить личный токен на github (user --> settings --> developer settings ---> tokens ---> checkbox workflow)
-// 
+// THIS!!! 7. Изменить настройки репозитория здесь внизу https://github.com/Nolra/next_pages/settings/actions
+// Workflow Permissions: Rean and Write и Allow GitHub Actions to approve pull requests
