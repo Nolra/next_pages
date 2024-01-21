@@ -70,11 +70,11 @@ export default HomePage;
 // }
 // export default nextConfig;
 
-// GITHUB
 // 5. Создаем папку .github, внутри нее создаем папку workflows
 // и внутри workflows создаем файл, который называем node.js.yml
 // и копируем содержимое этого файла туда https://github.com/DaveAldon/Next.js-and-GitHub-Pages-Example/blob/main/.github/workflows/node.js.yml
 
+// GITHUB
 // 6. Нужно обновить личный токен на github (user --> settings --> developer settings ---> tokens ---> checkbox workflow)
-// THIS 7. Изменить настройки репозитория здесь внизу https://github.com/Nolra/next_pages/settings/actions
+// 7. Изменить настройки репозитория здесь внизу https://github.com/YOUR_USERNAME/next_pages/settings/actions
 // Workflow Permissions: Rean and Write и Allow GitHub Actions to approve pull requests

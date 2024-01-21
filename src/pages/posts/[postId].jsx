@@ -48,7 +48,7 @@ const getStaticPaths = async() => {
   )
   return { 
     paths, // определяет пути для статичных страниц, которые мы будем генерировать во время build
-    fallback: false // false | 'blocking' 
+    fallback: false // true | 'blocking' 
   }
 }
 // если нет статичной пререндеренной страницы и

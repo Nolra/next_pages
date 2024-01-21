@@ -1,5 +1,6 @@
 import { getPosts } from "@/api/posts";
 import Head from "next/head";
+import Link from "next/link";
 
 // Нужно ответить на вопрос меняются ли данные 
 // в данном случае (posts, как массив данных)
@@ -29,9 +30,20 @@ const PostsPage = ({ posts }) => {
             {
               posts.map(post => (
                 <li key={post.id}>
-                  <a href={`/posts/${post.id}`}>
+                  <Link href={`/posts/${post.id}`}>
                     {post.title}
-                  </a>
+                  </Link>
+                  {/* 
+                    <Link href={{
+                      pathname: `/posts/${post.id}`,
+                      query: {
+                        limit: post.limit
+                      }
+                    }}>
+                      {post.title}
+                    </Link> 
+                  */}
+
                 </li>
               ))
             }

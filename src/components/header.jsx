@@ -5,8 +5,8 @@ const Header = () => {
       <header>
         <ul>
           <li><Link href="/">home</Link></li>
-          <li><a href="/about-us">about us</a></li>
-          <li><a href="/posts">posts</a></li>
+          <li><Link href="/about-us">about us</Link></li>
+          <li><Link href="/posts">posts</Link></li>
         </ul>
       </header>
   )
