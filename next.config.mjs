@@ -5,10 +5,11 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   output: 'export',
   basePath: '/next_pages',
-  images: {
-    loader: 'akamai',
-    path: '',
-  },
+  // images: {
+  //   loader: 'akamai',
+  //   path: '',
+  // },
+  images: { unoptimized: true },
   assetPrefix: isProd ? 'https://nolra.github.io/next_pages' : undefined,
 }
 

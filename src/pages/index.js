@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 
 // два варианта для загрузки страницы SSR || SSG
 // Серверный пререндер страницы или же статичная генерация страниц
@@ -38,9 +39,14 @@ const HomePage = () => {
       <Head>
         <title>Home Page</title>
       </Head>
-      <main>
-        <h1>Hello, HomePage</h1>
-      </main>
+      <h1>Hello, HomePage</h1>
+
+      <Script src="https:" strategy="beforeInteractive"/>
+      {/* для сторонних файлов скпиптов js
+        - beforeInteractive - важные скрипты загружаются до того как страница загрузится (проверка на бота)
+        - afterInteractive - загрузить скрипт после страницы (гугл аналитика)
+        - lazyOnload - виджеты, чаты (асинхронная загрузка)
+      */}
     </>
   )
 }

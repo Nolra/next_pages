@@ -79,13 +79,11 @@ const PostPage = ({ post }) => {
   return (
       <>
         <Head>
-          <title>Post {post.id}</title>
+          <title>{"Post " + post.id}</title>
         </Head>
-        <main>
-          <h1>Post Page {post.id}</h1>
-          <h2>{post.title}</h2>
-          <h3>{post.body}</h3>
-        </main>
+        <h1>Post Page {post.id}</h1>
+        <h2>{post.title}</h2>
+        <h3>{post.body}</h3>
       </>
   )
 }
