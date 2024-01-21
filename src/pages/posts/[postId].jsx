@@ -57,24 +57,24 @@ const getStaticPaths = async() => {
 // fallback: "blocking", тоже самое что и true, только нет фиктиной страницы загрузки (loading...)
 
 const PostPage = ({ post }) => {
-  const router = useRouter(); // для fallback: true
+  // const router = useRouter(); // для fallback: true
 
-  const fetcher = (url) => fetch(url).then(res => res.json());
-  const { data, error } = useSWR('/api/user', fetcher);
-  // если нам не нужен пререндеринг (по seo соображениям), то можем использовать клиентский хук useSWR
+  // const fetcher = (url) => fetch(url).then(res => res.json());
+  // const { data, error } = useSWR('/api/user', fetcher);
+  // // если нам не нужен пререндеринг (по seo соображениям), то можем использовать клиентский хук useSWR
 
-  if (error) {
-    return <div>Error!</div>
-  }
+  // if (error) {
+  //   return <div>Error!</div>
+  // }
 
-  if (!data) {
-    return <div>Loading data...</div>
-  }
+  // if (!data) {
+  //   return <div>Loading data...</div>
+  // }
 
 
-  if (router.isFallback) {
-    return <div>Loading page...</div>
-  }
+  // if (router.isFallback) {
+  //   return <div>Loading page...</div>
+  // }
 
   return (
       <>
